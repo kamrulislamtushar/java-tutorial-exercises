@@ -4,6 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println(12);
+        int beerNum = 99;
+        String word = "bottles";
+        while (beerNum > 0) {
+            if (beerNum == 1) {
+                word =  "bottles";
+            }
+            System.out.println(beerNum + " " + word + " of beer on the wall");
+            System.out.println(beerNum + " " + word + " of beer.");
+            System.out.println("Take one down.");
+            System.out.println("Pass it around.");
+            beerNum = beerNum - 1;
+            if (beerNum > 0) {
+                System.out.println(beerNum + " " + word + " of beer on the wall");
+            } else {
+                System.out.println("No more bottles of beer on the wall");
+            } // end else
+        } // end while loop        System.out.println(12);
     }
 }
